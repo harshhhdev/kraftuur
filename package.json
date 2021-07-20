@@ -32,5 +32,8 @@
     "design",
     "figma",
     "color system"
-  ]
+  ],
+  "dependencies": {
+    "kraftuur": "^0.0.3"
+  }
 }
