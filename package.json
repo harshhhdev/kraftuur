@@ -35,6 +35,6 @@
     "color system"
   ],
   "dependencies": {
-    "kraftuur": "^0.0.5"
+    "kraftuur": "^0.0.6"
   }
 }
