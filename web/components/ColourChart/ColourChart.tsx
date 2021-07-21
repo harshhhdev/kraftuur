@@ -23,6 +23,10 @@ const ColourChart: React.FC = () => {
   const [skyBlue, setSkyBlue] = React.useState([''])
   const [yellow, setYellow] = React.useState([''])
 
+  const [white, setWhite] = React.useState([''])
+  const [grey, setGrey] = React.useState([''])
+  const [black, setBlack] = React.useState([''])
+
   React.useEffect(() => {
     setAquamarine(Object.values(Colours.Aquamarine))
     setCitrus(Object.values(Colours.Citrus))
@@ -40,189 +44,230 @@ const ColourChart: React.FC = () => {
     setRusty(Object.values(Colours.Rusty))
     setSkyBlue(Object.values(Colours.SkyBlue))
     setYellow(Object.values(Colours.Yellow))
+
+    setWhite(Object.values(Colours.White))
+    setGrey(Object.values(Colours.Grey))
+    setBlack(Object.values(Colours.Black))
   }, [])
 
   return (
-    <S.SwatchGrid>
-      <S.SwatchRow>
-        {red.map((variant, index) => (
-          <S.Swatch
-            style={{ backgroundColor: variant }}
-            key={index}
-            onClick={() => {
-              copyToClipboard(variant)
-            }}
-          />
-        ))}
-      </S.SwatchRow>
-      <S.SwatchRow>
-        {rose.map((variant, index) => (
-          <S.Swatch
-            style={{ backgroundColor: variant }}
-            key={index}
-            onClick={() => {
-              copyToClipboard(variant)
-            }}
-          />
-        ))}
-      </S.SwatchRow>
-      <S.SwatchRow>
-        {hotPink.map((variant, index) => (
-          <S.Swatch
-            style={{ backgroundColor: variant }}
-            key={index}
-            onClick={() => {
-              copyToClipboard(variant)
-            }}
-          />
-        ))}
-      </S.SwatchRow>
-      <S.SwatchRow>
-        {pink.map((variant, index) => (
-          <S.Swatch
-            style={{ backgroundColor: variant }}
-            key={index}
-            onClick={() => {
-              copyToClipboard(variant)
-            }}
-          />
-        ))}
-      </S.SwatchRow>
-      <S.SwatchRow>
-        {purple.map((variant, index) => (
-          <S.Swatch
-            style={{ backgroundColor: variant }}
-            key={index}
-            onClick={() => {
-              copyToClipboard(variant)
-            }}
-          />
-        ))}
-      </S.SwatchRow>
-      <S.SwatchRow>
-        {navyBlue.map((variant, index) => (
-          <S.Swatch
-            style={{ backgroundColor: variant }}
-            key={index}
-            onClick={() => {
-              copyToClipboard(variant)
-            }}
-          />
-        ))}
-      </S.SwatchRow>
-      <S.SwatchRow>
-        {skyBlue.map((variant, index) => (
-          <S.Swatch
-            style={{ backgroundColor: variant }}
-            key={index}
-            onClick={() => {
-              copyToClipboard(variant)
-            }}
-          />
-        ))}
-      </S.SwatchRow>
-      <S.SwatchRow>
-        {cyan.map((variant, index) => (
-          <S.Swatch
-            style={{ backgroundColor: variant }}
-            key={index}
-            onClick={() => {
-              copyToClipboard(variant)
-            }}
-          />
-        ))}
-      </S.SwatchRow>
-      <S.SwatchRow>
-        {forestGreen.map((variant, index) => (
-          <S.Swatch
-            style={{ backgroundColor: variant }}
-            key={index}
-            onClick={() => {
-              copyToClipboard(variant)
-            }}
-          />
-        ))}
-      </S.SwatchRow>
-      <S.SwatchRow>
-        {aquamarine.map((variant, index) => (
-          <S.Swatch
-            style={{ backgroundColor: variant }}
-            key={index}
-            onClick={() => {
-              copyToClipboard(variant)
-            }}
-          />
-        ))}
-      </S.SwatchRow>
-      <S.SwatchRow>
-        {green.map((variant, index) => (
-          <S.Swatch
-            style={{ backgroundColor: variant }}
-            key={index}
-            onClick={() => {
-              copyToClipboard(variant)
-            }}
-          />
-        ))}
-      </S.SwatchRow>
-      <S.SwatchRow>
-        {lime.map((variant, index) => (
-          <S.Swatch
-            style={{ backgroundColor: variant }}
-            key={index}
-            onClick={() => {
-              copyToClipboard(variant)
-            }}
-          />
-        ))}
-      </S.SwatchRow>
-      <S.SwatchRow>
-        {yellow.map((variant, index) => (
-          <S.Swatch
-            style={{ backgroundColor: variant }}
-            key={index}
-            onClick={() => {
-              copyToClipboard(variant)
-            }}
-          >
-            <S.SwatchTooltip>Copied!</S.SwatchTooltip>
-          </S.Swatch>
-        ))}
-      </S.SwatchRow>
-      <S.SwatchRow>
-        {rusty.map((variant, index) => (
-          <S.Swatch
-            style={{ backgroundColor: variant }}
-            key={index}
-            onClick={() => {
-              copyToClipboard(variant)
-            }}
-          />
-        ))}
-      </S.SwatchRow>
-      <S.SwatchRow>
-        {citrus.map((variant, index) => (
-          <S.Swatch
-            style={{ backgroundColor: variant }}
-            key={index}
-            onClick={() => {
-              copyToClipboard(variant)
-            }}
-          />
-        ))}
-      </S.SwatchRow>
-      <S.SwatchRow>
-        {orange.map((variant, index) => (
-          <S.Swatch
-            style={{ backgroundColor: variant }}
-            key={index}
-            onClick={() => {
-              copyToClipboard(variant)
-            }}
-          />
-        ))}
-      </S.SwatchRow>
-    </S.SwatchGrid>
+    <>
+      <S.SwatchGrid>
+        <S.SwatchRow>
+          {red.map((variant, index) => (
+            <S.Swatch
+              style={{ backgroundColor: variant }}
+              key={index}
+              onClick={() => {
+                copyToClipboard(variant)
+              }}
+            />
+          ))}
+        </S.SwatchRow>
+        <S.SwatchRow>
+          {rose.map((variant, index) => (
+            <S.Swatch
+              style={{ backgroundColor: variant }}
+              key={index}
+              onClick={() => {
+                copyToClipboard(variant)
+              }}
+            />
+          ))}
+        </S.SwatchRow>
+        <S.SwatchRow>
+          {hotPink.map((variant, index) => (
+            <S.Swatch
+              style={{ backgroundColor: variant }}
+              key={index}
+              onClick={() => {
+                copyToClipboard(variant)
+              }}
+            />
+          ))}
+        </S.SwatchRow>
+        <S.SwatchRow>
+          {pink.map((variant, index) => (
+            <S.Swatch
+              style={{ backgroundColor: variant }}
+              key={index}
+              onClick={() => {
+                copyToClipboard(variant)
+              }}
+            />
+          ))}
+        </S.SwatchRow>
+        <S.SwatchRow>
+          {purple.map((variant, index) => (
+            <S.Swatch
+              style={{ backgroundColor: variant }}
+              key={index}
+              onClick={() => {
+                copyToClipboard(variant)
+              }}
+            />
+          ))}
+        </S.SwatchRow>
+        <S.SwatchRow>
+          {navyBlue.map((variant, index) => (
+            <S.Swatch
+              style={{ backgroundColor: variant }}
+              key={index}
+              onClick={() => {
+                copyToClipboard(variant)
+              }}
+            />
+          ))}
+        </S.SwatchRow>
+        <S.SwatchRow>
+          {skyBlue.map((variant, index) => (
+            <S.Swatch
+              style={{ backgroundColor: variant }}
+              key={index}
+              onClick={() => {
+                copyToClipboard(variant)
+              }}
+            />
+          ))}
+        </S.SwatchRow>
+        <S.SwatchRow>
+          {cyan.map((variant, index) => (
+            <S.Swatch
+              style={{ backgroundColor: variant }}
+              key={index}
+              onClick={() => {
+                copyToClipboard(variant)
+              }}
+            />
+          ))}
+        </S.SwatchRow>
+        <S.SwatchRow>
+          {forestGreen.map((variant, index) => (
+            <S.Swatch
+              style={{ backgroundColor: variant }}
+              key={index}
+              onClick={() => {
+                copyToClipboard(variant)
+              }}
+            />
+          ))}
+        </S.SwatchRow>
+        <S.SwatchRow>
+          {aquamarine.map((variant, index) => (
+            <S.Swatch
+              style={{ backgroundColor: variant }}
+              key={index}
+              onClick={() => {
+                copyToClipboard(variant)
+              }}
+            />
+          ))}
+        </S.SwatchRow>
+        <S.SwatchRow>
+          {green.map((variant, index) => (
+            <S.Swatch
+              style={{ backgroundColor: variant }}
+              key={index}
+              onClick={() => {
+                copyToClipboard(variant)
+              }}
+            />
+          ))}
+        </S.SwatchRow>
+        <S.SwatchRow>
+          {lime.map((variant, index) => (
+            <S.Swatch
+              style={{ backgroundColor: variant }}
+              key={index}
+              onClick={() => {
+                copyToClipboard(variant)
+              }}
+            />
+          ))}
+        </S.SwatchRow>
+        <S.SwatchRow>
+          {yellow.map((variant, index) => (
+            <S.Swatch
+              style={{ backgroundColor: variant }}
+              key={index}
+              onClick={() => {
+                copyToClipboard(variant)
+              }}
+            >
+              <S.SwatchTooltip>Copied!</S.SwatchTooltip>
+            </S.Swatch>
+          ))}
+        </S.SwatchRow>
+        <S.SwatchRow>
+          {rusty.map((variant, index) => (
+            <S.Swatch
+              style={{ backgroundColor: variant }}
+              key={index}
+              onClick={() => {
+                copyToClipboard(variant)
+              }}
+            />
+          ))}
+        </S.SwatchRow>
+        <S.SwatchRow>
+          {citrus.map((variant, index) => (
+            <S.Swatch
+              style={{ backgroundColor: variant }}
+              key={index}
+              onClick={() => {
+                copyToClipboard(variant)
+              }}
+            />
+          ))}
+        </S.SwatchRow>
+        <S.SwatchRow>
+          {orange.map((variant, index) => (
+            <S.Swatch
+              style={{ backgroundColor: variant }}
+              key={index}
+              onClick={() => {
+                copyToClipboard(variant)
+              }}
+            />
+          ))}
+        </S.SwatchRow>
+      </S.SwatchGrid>
+      <S.SwatchGrid>
+        <S.SwatchRow>
+          {white.map((variant, index) => (
+            <S.Swatch
+              style={{ backgroundColor: variant }}
+              key={index}
+              onClick={() => {
+                copyToClipboard(variant)
+              }}
+            />
+          ))}
+        </S.SwatchRow>
+        <S.SwatchRow>
+          {grey.map((variant, index) => (
+            <S.Swatch
+              style={{ backgroundColor: variant }}
+              key={index}
+              onClick={() => {
+                copyToClipboard(variant)
+              }}
+            />
+          ))}
+        </S.SwatchRow>
+        <S.SwatchRow>
+          {black.map((variant, index) => (
+            <S.Swatch
+              style={{ backgroundColor: variant }}
+              key={index}
+              onClick={() => {
+                copyToClipboard(variant)
+              }}
+            />
+          ))}
+        </S.SwatchRow>
+      </S.SwatchGrid>
+    </>
   )
 }
 
