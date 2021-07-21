@@ -1,13 +1,14 @@
 {
   "name": "kraftuur",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "A colour system for designing beautiful and accesible interfaces",
-  "main": "dist/index.js",
+  "main": "index.js",
   "repository": "https://github.com/harshhhdev/kraftuur",
   "author": "Harsh Singh <hi.harsh@protonmail.ch>",
   "license": "MIT",
   "type": "module",
-  "types": "dist/index.d.ts",
+  "module": "index.mjs",
+  "typings": "index.d.ts",
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.2.3",
     "@types/node": "^16.3.3",
