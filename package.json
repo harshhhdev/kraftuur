@@ -1,6 +1,6 @@
 {
   "name": "kraftuur",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A colour system for designing beautiful and accesible interfaces",
   "main": "dist/index.js",
   "repository": "https://github.com/harshhhdev/kraftuur",
@@ -9,13 +9,16 @@
   "type": "module",
   "types": "dist/index.d.ts",
   "devDependencies": {
+    "@rollup/plugin-typescript": "^8.2.3",
     "@types/node": "^16.3.3",
+    "rollup": "^2.53.2",
+    "tslib": "^2.3.0",
     "typescript": "^4.3.5",
     "typescript-run": "^0.0.9"
   },
   "scripts": {
     "watch": "ts-run src/index.ts -w",
-    "build": "tsc",
+    "build": "tsc && rollup -c",
     "build:watch": "tsc -w"
   },
   "keywords": [
@@ -33,8 +36,5 @@
     "design",
     "figma",
     "color system"
-  ],
-  "dependencies": {
-    "kraftuur": "^0.0.6"
-  }
+  ]
 }
