@@ -77,6 +77,11 @@ typings/
 # FuseBox cache
 .fusebox/
 
-*.d.ts
-*.js
 *.mjs
+
+main
+other
+index.d.ts
+index.js
+
+out
