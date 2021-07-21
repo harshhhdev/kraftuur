@@ -10,6 +10,10 @@
   <a href="https://www.figma.com/file/S2I3vzBZkVSIbGzgRUkvyC/KraftuurColourSystem?node-id=0%3A1">Design Board</a>
     ·
   <a href="https://github.com/harshhhdev/kraftuur">Live</a>
+    ·
+  <a href="https://github.com/harshhhdev/kraftuur/wiki">Documentation</a>
+    ·
+  <a href="https://www.npmjs.com/package/kraftuur">NPM.js</a>
  </p>
  
 # 🚀 Quickstart
