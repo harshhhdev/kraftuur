@@ -1,6 +1,6 @@
 {
   "name": "kraftuur",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A colour system for designing beautiful and accesible interfaces",
   "main": "dist/index.js",
   "repository": "https://github.com/harshhhdev/kraftuur",
