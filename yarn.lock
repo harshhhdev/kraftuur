@@ -141,32 +141,6 @@ is-number@^7.0.0:
   resolved "https://registry.yarnpkg.com/is-number/-/is-number-7.0.0.tgz#7535345b896734d5f80c4d06c50955527a14f12b"
   integrity sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
 
-kraftuur@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/kraftuur/-/kraftuur-0.0.3.tgz#dc196f2a8ef64503195fdd583dcb5428029e4246"
-  integrity sha512-gz3C/d2tzIJpwTROgUd8aYU9yp5UJiU0NRr0008UDa0mYZNNmrEQdqj0prFfLxts0tCI/mibBY4Koygl954z1w==
-
-kraftuur@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/kraftuur/-/kraftuur-0.0.4.tgz#5182f09417e240e0ed46c32e917d2c79660e1f48"
-  integrity sha512-D+x/ZvjubYTX7SgnibDh7G5V2ljvTqLK0herS7ayuFLeB1RGxlWlNhMvuINuF3cIMfDVoEVporAHa3+0ocsdEg==
-  dependencies:
-    kraftuur "^0.0.3"
-
-kraftuur@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/kraftuur/-/kraftuur-0.0.5.tgz#968f1017ca7880d81bc9a167d00439f248c64fd7"
-  integrity sha512-V7i6I2wvhn8/V6/3affk1IIIjocfSQrWLrdArvJLNKnYEEBPwfkvXel1IXRFQXeVb3ICbpSUijEpg3LW2ZUR4Q==
-  dependencies:
-    kraftuur "^0.0.4"
-
-kraftuur@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/kraftuur/-/kraftuur-0.0.6.tgz#e8e9d2aa7a1c0b9ef96ed74710600dbbb27c6025"
-  integrity sha512-+6Ky98AHjBTHNrv5VsVSHgQL2qrCMT9n7sZ6BSq2wYfAD9KcznZt0dUV1kONT43W6lUWVSrFH1ZI4lN6HHi8+A==
-  dependencies:
-    kraftuur "^0.0.5"
-
 normalize-path@^3.0.0, normalize-path@~3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
