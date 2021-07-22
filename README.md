@@ -35,7 +35,7 @@ yarn watch
 
 Deploy this project to [NPM.js](https://npmjs.com/)
 
-```
+```bash
 # build TypeScript files
 yarn build
 
@@ -50,7 +50,7 @@ yarn publish
 
 After setting up the project, and making changes:
 
-```git
+```bash
 git add .
 git commit -m "commit message"
 git push YOUR_REPO_URL YOUR_BRANCH
