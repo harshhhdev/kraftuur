@@ -16,6 +16,14 @@
   <a href="https://www.npmjs.com/package/kraftuur">NPM.js</a>
  </p>
  
+# Installation 
+
+```bash
+yarn add kraftuur
+```
+
+*Get started by with Kraftuur by reading the [docs](https://github.com/harshhhdev/kraftuur/wiki)*
+ 
 # 💻 Quickstart
 
 Run the package locally
