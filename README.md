@@ -16,7 +16,7 @@
   <a href="https://www.npmjs.com/package/kraftuur">NPM.js</a>
  </p>
  
-# Installation 
+# ☁️ Installation 
 
 ```bash
 yarn add kraftuur
