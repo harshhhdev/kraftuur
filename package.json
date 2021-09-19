@@ -1,6 +1,6 @@
 {
   "name": "kraftuur",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A colour system for designing beautiful and accesible interfaces",
   "main": "index.js",
   "repository": "https://github.com/harshhhdev/kraftuur",
@@ -38,6 +38,6 @@
     "color system"
   ],
   "dependencies": {
-    "kraftuur": "^0.1.2"
+    "kraftuur": "^1.0.0"
   }
 }
