@@ -39,6 +39,9 @@
     "color system"
   ],
   "dependencies": {
-    "kraftuur": "^1.0.2"
+    "@stitches/react": "^1.2.0",
+    "copy-lite": "^0.1.2",
+    "kraftuur": "^1.0.2",
+    "react-feather": "^2.0.9"
   }
 }
